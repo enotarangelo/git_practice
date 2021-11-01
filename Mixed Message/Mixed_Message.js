@@ -1,4 +1,4 @@
-const message={
+/**const message={
     intro :{
         informale:"Ciao",
         giorno: "Buongiorno",
@@ -64,6 +64,17 @@ const random_message=obj=>{
      }
     return ret;
 
-}
+}*/
 
+const message={
+    intro :["Ciao", "Buongiorno", "Buonasera", "Salve"],
+    testo: ["come va?", "com'è andata la giornata", "posso fare qualcosa ?", "Come stai"],
+    saluto: ["Saluti.", "A presto.", "Arrivederci.", "Ciao"]
+    }
+const random_message=obj=>{
+    let random1= Math.floor(Math.random()*obj.intro.length);
+    let random2= Math.floor(Math.random()*obj.testo.length);
+    let random3= Math.floor(Math.random()*obj.saluto.length);
+    return message.intro[random1] +" "+ message.testo[random2]+" "+message.saluto[random3];
+}
 console.log(random_message(message));
