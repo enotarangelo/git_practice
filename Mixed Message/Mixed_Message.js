@@ -66,6 +66,7 @@ const random_message=obj=>{
 
 }*/
 
+// Refactoring
 const message={
     intro :["Ciao", "Buongiorno", "Buonasera", "Salve"],
     testo: ["come va?", "com'è andata la giornata", "posso fare qualcosa ?", "Come stai"],
